@@ -1,0 +1,368 @@
+@import 'variables';
+@import 'funciones';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    background-color: $color_DarkBlue;
+}
+
+.header {
+    height: 101vh;
+    .barra {
+        background-color: $color_fondo_barra;
+        .barra-navegacion {
+            display: flex;
+            align-items: center;
+            .logo {
+                display: flex;
+                align-content: center;
+                width: 40%;
+                img {
+                    height: 80px;
+                    scale: 1.2;
+                    margin-top: 5px;
+                    margin-bottom: -5px;
+                }
+            }
+            .checkbtn {
+                font-size: 25px;
+                color: white;
+                display: none;
+            }
+            #check {
+                display: none;
+            }
+            .enlaces {
+                display: flex;
+                align-items: center;
+                display: flex;
+                width: 60%;
+                .enlace {
+                    width: 60%;
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        display: flex;
+                        justify-content: space-evenly;
+                        list-style: none;
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+                .redes {
+                    display: flex;
+                    align-items: center;
+                    width: 40%;
+                    ul {
+                        width: 100%;
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-evenly;
+                        @include botones_redes();
+                    }
+                }
+            }
+        }
+        @include tablet() {
+            .barra-navegacion {
+                justify-content: space-between;
+                .logo {
+                    width: 80%;
+                }
+                .checkbtn {
+                    width: 15%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 100;
+                }
+                .enlaces {
+                    background-color: $color_DarkBlue-5;
+                    filter: blur(0px);
+                    backdrop-filter: blur(2px);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 23px;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    right: -100%;
+                    transition: all .5s;
+                    .enlace {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 60%;
+                        width: 100%;
+                        border: 1px solid $color_Yellow;
+                        border-bottom: 0;
+                        ul {
+                            text-align: center;
+                            line-height: 60px;
+                            display: block;
+                            li {
+                                a {
+                                    font-family: $font-banner;
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .redes {
+                        display: flex;
+                        align-items: flex-start;
+                        height: 40%;
+                        width: 100%;
+                        border: 1px solid yellow;
+                        border-top: 0;
+                        ul {
+                            width: 60%;
+                            margin: 0 auto 0 auto;
+                            justify-content: space-evenly;
+                        }
+                    }
+                }
+                #check:checked {
+                    ~.enlaces {
+                        right: 0;
+                    }
+                    ~.redes {
+                        left: 0;
+                    }
+                }
+            }
+        }
+        @include celular() {
+            .barra-navegacion {
+                height: 60px;
+                .logo {
+                    img {
+                        height: 56px;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 101vh;
+        .img-banner {
+            position: relative;
+            .banner-1 {
+                background-image: url(../img/Banner_1.jpg);
+                animation: mianimacion 35s ease-in-out 30s infinite;
+            }
+            .banner-2 {
+                background-image: url(../img/Banner_10.jpg);
+                animation: mianimacion 35s ease-in-out 25s infinite;
+            }
+            .banner-3 {
+                background-image: url(../img/Banner_12.jpg);
+                animation: mianimacion 35s ease-in-out 20s infinite;
+            }
+            .banner-4 {
+                background-image: url(../img/Otros_3.jpg);
+                animation: mianimacion 35s ease-in-out 15s infinite;
+            }
+            .banner-5 {
+                background-image: url(../img/Banner_6.jpg);
+                animation: mianimacion 35s ease-in-out 10s infinite;
+            }
+            .banner-6 {
+                background-image: url(../img/Banner_4.jpg);
+                animation: mianimacion 35s ease-in-out 5s infinite;
+            }
+            .banner-1,
+            .banner-2,
+            .banner-3,
+            .banner-4,
+            .banner-5,
+            .banner-6 {
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                background-size: 100%;
+                background-attachment: fixed;
+            }
+            @keyframes mianimacion {
+                0% {
+                    opacity: 1;
+                }
+                20% {
+                    opacity: 1;
+                }
+                30% {
+                    opacity: 0;
+                }
+                90% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+        .end-banner {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        @include tablet() {
+            height: 81vh;
+            .img-banner {
+                .banner-1,
+                .banner-2,
+                .banner-3,
+                .banner-4,
+                .banner-5,
+                .banner-6 {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    height: 80vh;
+                    background-size: cover;
+                }
+            }
+            .end-banner {
+                bottom: 0;
+            }
+        }
+        @include celular() {
+            height: 71vh;
+            .img-banner {
+                .banner-1,
+                .banner-2,
+                .banner-3,
+                .banner-4,
+                .banner-5 {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: 200%;
+                    height: 70vh;
+                }
+                .banner-6 {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: 300%;
+                    height: 70vh;
+                }
+            }
+            .end-banner {
+                bottom: 0;
+            }
+        }
+    }
+    .container {
+        align-content: center;
+        text-align: center;
+        .texto-banner {
+            color: $color_White;
+            margin-top: 10%;
+            h1 {
+                font-size: 4.5rem;
+            }
+            p {
+                font-size: 2.5rem;
+            }
+            hr {
+                margin-top: 10px;
+                color: $color_White;
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
+        @include tablet() {
+            .texto-banner {
+                margin-top: 13%;
+                h1 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        @include celular() {
+            .texto-banner {
+                margin-top: 25%;
+                h1 {
+                    font-size: 1.8rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.cuerpo {
+    .about {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        .title {
+            h1 {
+                text-align: center;
+                font-size: 3.5rem;
+                color: $color_White;
+            }
+        }
+        .about-description {
+            display: flex;
+            justify-content: space-between;
+            img:hover {
+                scale: 1.05;
+                transition: 1s ease-in;
+            }
+            img {
+                margin: 40px;
+                width: 27%;
+                margin-left: auto;
+                margin-right: auto;
+                height: 300px;
+                border-radius: 50%;
+                border: 3px white solid;
+                box-shadow: 0px 0px 4px white;
+                transition: all .8s ease-in;
+            }
+            .description {
+                width: 60%;
+                height: 380px;
+                ;
+                p {
+                    padding: 30px;
+                    color: $color_White;
+                    font-family: $font_Console;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+                a {
+                    margin: 30px;
+                    text-decoration: none;
+                    font-size: 2.0rem;
+                    color: $color_Yellow;
+                }
+            }
+        }
+    }
+}
