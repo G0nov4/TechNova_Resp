@@ -291,7 +291,7 @@ body {
         }
         @include tablet() {
             .texto-banner {
-                margin-top: 13%;
+                margin-top: 16%;
                 h1 {
                     font-size: 3rem;
                 }
@@ -348,7 +348,6 @@ body {
             .description {
                 width: 60%;
                 height: 380px;
-                ;
                 p {
                     padding: 30px;
                     color: $color_White;
@@ -365,4 +364,57 @@ body {
             }
         }
     }
+    @include computadora() {
+        .about {
+            margin-top: 0px;
+            .title {
+                h1 {
+                    font-size: 2.8rem;
+                }
+            }
+            .about-description {
+                img {
+                    height: 250px;
+                }
+                .description {
+                    p {
+                        padding: 20px;
+                        font-size: 1.3rem;
+                        line-height: 2rem;
+                    }
+                    a {
+                        font-size: 1.5rem;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include tablet() {
+        .about {
+            margin-top: -110px;
+            .title {
+                h1 {
+                    font-size: 2.8rem;
+                }
+            }
+            .about-description {
+                img {
+                    height: 250px;
+                }
+                .description {
+                    p {
+                        padding: 20px;
+                        font-size: 1.2rem;
+                        line-height: 1.5rem;
+                    }
+                    a {
+                        font-size: 1.5rem;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include celular() {}
 }

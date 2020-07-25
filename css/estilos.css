@@ -309,7 +309,7 @@ body {
 }
 @media (max-width: 768px) {
   .header .container .texto-banner {
-    margin-top: 13%;
+    margin-top: 16%;
   }
   .header .container .texto-banner h1 {
     font-size: 3rem;
@@ -376,6 +376,46 @@ body {
   text-decoration: none;
   font-size: 2rem;
   color: #fcd15f;
+}
+@media (max-width: 1024px) {
+  .cuerpo .about {
+    margin-top: 0px;
+  }
+  .cuerpo .about .title h1 {
+    font-size: 2.8rem;
+  }
+  .cuerpo .about .about-description img {
+    height: 250px;
+  }
+  .cuerpo .about .about-description .description p {
+    padding: 20px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .cuerpo .about .about-description .description a {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo .about {
+    margin-top: -110px;
+  }
+  .cuerpo .about .title h1 {
+    font-size: 2.8rem;
+  }
+  .cuerpo .about .about-description img {
+    height: 250px;
+  }
+  .cuerpo .about .about-description .description p {
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .cuerpo .about .about-description .description a {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
