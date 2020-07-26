@@ -418,19 +418,27 @@ body {
     margin-top: -180px;
     height: 260px;
   }
+  .cuerpo .about .title {
+    margin-bottom: -30px;
+  }
   .cuerpo .about .title h1 {
     font-size: 1.7rem;
+  }
+  .cuerpo .about .about-description {
+    display: flex;
+    flex-direction: column;
   }
   .cuerpo .about .about-description img {
     padding: 0;
     width: 150px;
     height: 150px;
+    margin-bottom: 0px;
   }
   .cuerpo .about .about-description .description {
+    width: 100%;
     height: 230px;
   }
   .cuerpo .about .about-description .description p {
-    padding: 10px;
     font-size: 0.7rem;
     line-height: 1rem;
   }
@@ -443,6 +451,11 @@ body {
   color: white;
   font-size: 2.4rem;
   margin-bottom: 25px;
+}
+@media (max-width: 480px) {
+  .cuerpo h2 {
+    margin-top: 130px;
+  }
 }
 .cuerpo .ultimate-post {
   margin-bottom: 30px;
@@ -621,6 +634,7 @@ body {
   .cuerpo .ultimate-post .cards-M .card-m .card-m-description h3 {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 30%;
     font-family: "Fjalla One", sans-serif;
   }
