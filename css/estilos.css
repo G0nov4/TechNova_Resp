@@ -175,6 +175,9 @@ body {
   .header .barra .barra-navegacion .logo img {
     height: 56px;
   }
+  .header .barra .barra-navegacion .enlaces {
+    padding: 10px;
+  }
 }
 .header .banner {
   position: absolute;
