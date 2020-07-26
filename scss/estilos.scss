@@ -734,9 +734,12 @@ body {
                     height: 60%;
                 }
                 h3 {
+                    margin-top: -10px;
                     font-size: .9rem;
                 }
                 p {
+                    margin-top: -5px;
+                    line-height: .79rem;
                     height: 70px;
                     font-size: .6rem;
                 }
@@ -828,8 +831,12 @@ body {
             }
         }
         .text {
+            .frase {
+                font-size: .8rem;
+            }
             .autor {
                 margin: 0;
+                font-size: .7rem;
             }
         }
     }

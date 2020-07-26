@@ -734,9 +734,12 @@ body {
     height: 60%;
   }
   .cuerpo .other-post .card h3 {
+    margin-top: -10px;
     font-size: 0.9rem;
   }
   .cuerpo .other-post .card p {
+    margin-top: -5px;
+    line-height: 0.79rem;
     height: 70px;
     font-size: 0.6rem;
   }
@@ -843,8 +846,12 @@ body {
   .footer .footer-redes ul {
     width: 60%;
   }
+  .footer .text .frase {
+    font-size: 0.8rem;
+  }
   .footer .text .autor {
     margin: 0;
+    font-size: 0.7rem;
   }
 }
 
