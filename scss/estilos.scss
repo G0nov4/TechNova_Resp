@@ -652,4 +652,185 @@ body {
             }
         }
     }
+    @include celular() {
+        .otros {
+            margin-top: 460px;
+        }
+    }
+    .other-post {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: $color_White;
+            width: 32.5%;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            position: relative;
+            top: 0;
+            transition: all .5s ease;
+            // border: 1px #afafaf solid;
+            img {
+                border-radius: 18px 18px 0px 0px;
+                width: 100%;
+            }
+            h3 {
+                font-family: $font_title-card;
+                text-align: center;
+                padding: 15px;
+            }
+            p {
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                padding: 0px 20px;
+                height: 150px;
+            }
+            button {
+                margin: 10px;
+                width: 33%;
+                @include button($color_DarkBlue, $color_White);
+            }
+        }
+        .card:hover {
+            scale: 1.005;
+            top: -10px;
+            box-shadow: 0 4px 5px rgba(255, 255, 255, 0.2);
+        }
+    }
+    @include computadora() {
+        .other-post {
+            .card {
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+    @include tablet() {
+        .other-post {
+            .card {
+                width: 48%;
+                img {}
+                h3 {}
+                p {
+                    height: 90px;
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+    @include celular() {
+        .other-post {
+            .card {
+                width: 48%;
+                height: 350px;
+                img {
+                    height: 60%;
+                }
+                h3 {
+                    font-size: .9rem;
+                }
+                p {
+                    height: 70px;
+                    font-size: .6rem;
+                }
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: $color_footer_Blue;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+    h1 {
+        color: $color_White;
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+    .footer-redes {
+        width: 100%;
+        ul {
+            padding: 10px;
+            display: flex;
+            width: 15%;
+            text-decoration: none;
+            list-style: none;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+            @include botones_redes();
+        }
+    }
+    .text {
+        color: $color_White;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        .frase {
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-family: 'Dosis', sans-serif;
+        }
+        .autor {
+            display: flex;
+            justify-content: end;
+            font-family: 'Dosis', sans-serif;
+        }
+    }
+}
+
+@include tablet() {
+    .footer {
+        height: 180px;
+        h1 {
+            font-size: 1.5rem;
+        }
+        .footer-redes {
+            ul {
+                width: 30%;
+            }
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            .autor {
+                display: flex;
+                margin-left: 480px;
+            }
+        }
+    }
+}
+
+@include celular() {
+    .footer {
+        height: 180px;
+        width: 100%;
+        h1 {
+            font-size: 1.5rem;
+        }
+        .footer-redes {
+            ul {
+                width: 60%;
+            }
+        }
+        .text {
+            .autor {
+                margin: 0;
+            }
+        }
+    }
 }
