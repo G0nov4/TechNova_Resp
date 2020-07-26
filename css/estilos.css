@@ -401,20 +401,238 @@ body {
   .cuerpo .about {
     margin-top: -110px;
   }
-  .cuerpo .about .title h1 {
-    font-size: 2.8rem;
-  }
   .cuerpo .about .about-description img {
-    height: 250px;
+    height: 230px;
   }
   .cuerpo .about .about-description .description p {
-    padding: 20px;
+    padding: 10px;
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
   .cuerpo .about .about-description .description a {
-    font-size: 1.5rem;
-    margin: 20px;
+    margin: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo .about {
+    margin-top: -180px;
+    height: 260px;
+  }
+  .cuerpo .about .title h1 {
+    font-size: 1.7rem;
+  }
+  .cuerpo .about .about-description img {
+    padding: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .cuerpo .about .about-description .description {
+    height: 230px;
+  }
+  .cuerpo .about .about-description .description p {
+    padding: 10px;
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  .cuerpo .about .about-description .description a {
+    margin: 10px;
+    font-size: 1rem;
+  }
+}
+.cuerpo h2 {
+  color: white;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+}
+.cuerpo .ultimate-post {
+  margin-bottom: 30px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+.cuerpo .ultimate-post .card-G {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 39%;
+  box-shadow: 0px 0px 3px #bbe1fa;
+  border-radius: 11px;
+}
+.cuerpo .ultimate-post .card-G img {
+  border-radius: 10px 10px 0px 0px;
+  height: 50%;
+}
+.cuerpo .ultimate-post .card-G h3 {
+  font-family: "Fjalla One", sans-serif;
+  height: 5%;
+  text-align: center;
+}
+.cuerpo .ultimate-post .card-G p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  line-height: 22px;
+}
+.cuerpo .ultimate-post .card-G button {
+  margin: 10px;
+  background-color: #0b1726;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 30%;
+  height: 30px;
+  box-shadow: 0 0 5px black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.cuerpo .ultimate-post .cards-M {
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cuerpo .ultimate-post .cards-M .card-m {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px #bbe1fa;
+}
+.cuerpo .ultimate-post .cards-M .card-m img {
+  border-radius: 10px 0px 0px 10px;
+  width: 45%;
+}
+.cuerpo .ultimate-post .cards-M .card-m .card-m-description {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+.cuerpo .ultimate-post .cards-M .card-m .card-m-description h3 {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Fjalla One", sans-serif;
+  height: 30%;
+}
+.cuerpo .ultimate-post .cards-M .card-m .card-m-description p {
+  font-family: "Poppins", sans-serif;
+  padding: 8px;
+  text-align: center;
+  line-height: 20px;
+  height: 60%;
+  margin-bottom: -13px;
+}
+.cuerpo .ultimate-post .cards-M .card-m .card-m-description button {
+  height: 12%;
+  margin-left: 67%;
+  background-color: #0b1726;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 30%;
+  height: 30px;
+  box-shadow: 0 0 5px black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@media (max-width: 1024px) {
+  .cuerpo .ultimate-post .card-G h3 {
+    font-size: 1rem;
+  }
+  .cuerpo .ultimate-post .card-G p {
+    font-size: 0.8rem;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description h3 {
+    font-size: 1rem;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .cuerpo .ultimate-post .card-G h3 {
+    font-size: 0.8rem;
+  }
+  .cuerpo .ultimate-post .card-G p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .cuerpo .ultimate-post .card-G button {
+    font-size: 0.7rem;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description p {
+    margin-top: 0;
+    padding: 5px;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description button {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .cuerpo .ultimate-post {
+    flex-direction: column;
+  }
+  .cuerpo .ultimate-post .card-G {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .cuerpo .ultimate-post .card-G button {
+    display: none;
+  }
+  .cuerpo .ultimate-post .cards-M {
+    width: 100%;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 3px #bbe1fa;
+    margin-bottom: 20px;
+    border-radius: 11px;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description {
+    margin-bottom: auto;
+    width: 100%;
+    height: 150px;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description h3 {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    font-family: "Fjalla One", sans-serif;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description p {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  .cuerpo .ultimate-post .cards-M .card-m .card-m-description button {
+    display: none;
   }
 }
 
