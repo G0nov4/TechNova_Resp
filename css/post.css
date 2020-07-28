@@ -11,6 +11,12 @@ body {
   background-color: #0b1726;
 }
 
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header .barra {
   background-color: rgba(45, 64, 89, 0.5);
 }
@@ -179,7 +185,7 @@ body {
 }
 .header .banner img {
   position: relative;
-  top: -80px;
+  top: -89px;
   z-index: -1;
   width: 100%;
 }
@@ -203,7 +209,7 @@ body {
 @media (max-width: 480px) {
   .header .banner img {
     width: 150%;
-    animation: animacion-banner 10s infinite alternate;
+    animation: animacion-banner s infinite alternate;
   }
   @keyframes animacion-banner {
     to {
@@ -232,15 +238,24 @@ body {
   justify-content: center;
 }
 .cuerpo .post .post-description .description {
-  width: 90%;
+  width: 100%;
 }
 .cuerpo .post .post-description .description p {
   padding: 30px;
   color: white;
-  text-align: center;
+  text-align: justify;
   font-family: "Inconsolata", monospace;
   font-size: 1.8rem;
   line-height: 2.5rem;
+}
+.cuerpo .post .post-description .description .figure {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.cuerpo .post .post-description .description h2 {
+  color: white;
+  font-size: 2rem;
 }
 .cuerpo .post .post-description .description a {
   margin: 30px;

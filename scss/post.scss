@@ -10,6 +10,12 @@ body {
     background-color: $color_DarkBlue;
 }
 
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
     .barra {
         background-color: $color_fondo_barra;
@@ -163,7 +169,7 @@ body {
         margin-bottom: -200px;
         img {
             position: relative;
-            top: -80px;
+            top: -89px;
             z-index: -1;
             width: 100%;
         }
@@ -189,7 +195,7 @@ body {
         @include celular() {
             img {
                 width: 150%;
-                animation: animacion-banner 10s infinite alternate;
+                animation: animacion-banner s infinite alternate;
             }
             @keyframes animacion-banner {
                 to {
@@ -221,14 +227,23 @@ body {
             display: flex;
             justify-content: center;
             .description {
-                width: 90%;
+                width: 100%;
                 p {
                     padding: 30px;
                     color: $color_White;
-                    text-align: center;
+                    text-align: justify;
                     font-family: $font_Console;
                     font-size: 1.8rem;
                     line-height: 2.5rem;
+                }
+                .figure {
+                    width: 100%;
+                    position: relative;
+                    text-align: center;
+                }
+                h2 {
+                    color: white;
+                    font-size: 2rem;
                 }
                 a {
                     margin: 30px;
