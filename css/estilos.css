@@ -372,8 +372,8 @@ body {
   padding: 30px;
   color: white;
   font-family: "Inconsolata", monospace;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 .cuerpo .about .about-description .description a {
   margin: 30px;
@@ -484,6 +484,7 @@ body {
 .cuerpo .ultimate-post .card-G p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
+  line-height: 1.4rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -556,7 +557,7 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 8px;
   text-align: center;
-  line-height: 20px;
+  line-height: 16px;
   height: 70%;
   margin-bottom: -13px;
 }
