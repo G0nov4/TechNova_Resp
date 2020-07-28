@@ -1,0 +1,402 @@
+@import 'variables';
+@import 'funciones';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color_DarkBlue;
+}
+
+.header {
+    .barra {
+        background-color: $color_fondo_barra;
+        .barra-navegacion {
+            display: flex;
+            align-items: center;
+            .logo {
+                display: flex;
+                align-content: center;
+                width: 40%;
+                img {
+                    height: 80px;
+                    scale: 1.2;
+                    margin-top: 5px;
+                    margin-bottom: -5px;
+                }
+            }
+            .checkbtn {
+                font-size: 25px;
+                color: white;
+                display: none;
+            }
+            #check {
+                display: none;
+            }
+            .enlaces {
+                display: flex;
+                align-items: center;
+                display: flex;
+                width: 60%;
+                .enlace {
+                    width: 60%;
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        display: flex;
+                        justify-content: space-evenly;
+                        list-style: none;
+                        li {
+                            a {
+                                font-family: $font-banner;
+                                text-decoration: none;
+                                color: $color_White;
+                                font-size: 1.3rem;
+                            }
+                            a:hover {
+                                color: #00e1ff;
+                            }
+                        }
+                    }
+                }
+                .redes {
+                    display: flex;
+                    align-items: center;
+                    width: 40%;
+                    ul {
+                        width: 100%;
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-evenly;
+                        @include botones_redes();
+                    }
+                }
+            }
+        }
+        @include tablet() {
+            .barra-navegacion {
+                justify-content: space-between;
+                .logo {
+                    width: 80%;
+                }
+                .checkbtn {
+                    width: 15%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 100;
+                }
+                .enlaces {
+                    background-color: $color_DarkBlue-5;
+                    filter: blur(0px);
+                    backdrop-filter: blur(2px);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 23px;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    right: -100%;
+                    transition: all .5s;
+                    .enlace {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 60%;
+                        width: 100%;
+                        border: 1px solid $color_Yellow;
+                        border-bottom: 0;
+                        ul {
+                            text-align: center;
+                            line-height: 60px;
+                            display: block;
+                            li {
+                                a {
+                                    font-family: $font-banner;
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .redes {
+                        display: flex;
+                        align-items: flex-start;
+                        height: 40%;
+                        width: 100%;
+                        border: 1px solid yellow;
+                        border-top: 0;
+                        ul {
+                            width: 60%;
+                            margin: 0 auto 0 auto;
+                            justify-content: space-evenly;
+                        }
+                    }
+                }
+                #check:checked {
+                    ~.enlaces {
+                        right: 0;
+                    }
+                    ~.redes {
+                        left: 0;
+                    }
+                }
+            }
+        }
+        @include celular() {
+            .barra-navegacion {
+                height: 60px;
+                .logo {
+                    img {
+                        height: 56px;
+                    }
+                }
+                .enlaces {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .banner {
+        margin-bottom: -200px;
+        img {
+            position: relative;
+            top: -80px;
+            z-index: -1;
+            width: 100%;
+        }
+        .end-banner {
+            position: relative;
+            top: -220px;
+            width: 100%;
+            z-index: -1;
+        }
+        @include tablet() {
+            .img-banner {
+                .banner-1 {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    height: 80vh;
+                    background-size: cover;
+                }
+            }
+            .end-banner {
+                bottom: 0;
+            }
+        }
+        @include celular() {
+            img {
+                width: 150%;
+                animation: animacion-banner 10s infinite alternate;
+            }
+            @keyframes animacion-banner {
+                to {
+                    left: 0;
+                }
+                from {
+                    left: -50%;
+                }
+            }
+            .end-banner {
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.cuerpo {
+    .post {
+        display: flex;
+        flex-direction: column;
+        .title {
+            h1 {
+                text-align: center;
+                font-size: 3.5rem;
+                color: $color_White;
+            }
+        }
+        .post-description {
+            display: flex;
+            justify-content: center;
+            .description {
+                width: 90%;
+                p {
+                    padding: 30px;
+                    color: $color_White;
+                    text-align: center;
+                    font-family: $font_Console;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+                a {
+                    margin: 30px;
+                    text-decoration: none;
+                    font-size: 2.0rem;
+                    color: $color_Yellow;
+                }
+            }
+        }
+    }
+    @include computadora() {
+        .post {
+            margin-top: 0px;
+            .title {
+                h1 {
+                    font-size: 2.8rem;
+                }
+            }
+            .post-description {
+                .description {
+                    p {
+                        padding: 20px;
+                        font-size: 1.3rem;
+                        line-height: 2rem;
+                    }
+                    a {
+                        font-size: 1.5rem;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @include tablet() {
+        .post {
+            .title {
+                h1 {
+                    font-size: 1.8rem;
+                }
+            }
+            margin-top: -110px;
+            .post-description {
+                .description {
+                    p {
+                        padding: 10px;
+                        font-size: 1.2rem;
+                        line-height: 1.5rem;
+                    }
+                    a {
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @include celular() {
+        .post {
+            .title {
+                h1 {
+                    font-size: 1.7rem;
+                }
+            }
+            .post-description {
+                display: flex;
+                flex-direction: column;
+                .description {
+                    width: 100%;
+                    p {
+                        font-size: 0.87rem;
+                        line-height: 1rem;
+                    }
+                    a {
+                        margin: 10px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: $color_footer_Blue;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+    h1 {
+        color: $color_White;
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+    .footer-redes {
+        width: 100%;
+        ul {
+            padding: 10px;
+            display: flex;
+            width: 15%;
+            text-decoration: none;
+            list-style: none;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+            @include botones_redes();
+        }
+    }
+    .text {
+        color: $color_White;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        .frase {
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-family: 'Dosis', sans-serif;
+        }
+        .autor {
+            display: flex;
+            justify-content: end;
+            font-family: 'Dosis', sans-serif;
+        }
+    }
+}
+
+@include tablet() {
+    .footer {
+        height: 180px;
+        h1 {
+            font-size: 1.5rem;
+        }
+        .footer-redes {
+            ul {
+                width: 30%;
+            }
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            .autor {
+                display: flex;
+                margin-left: 480px;
+            }
+        }
+    }
+}
+
+@include celular() {
+    .footer {
+        height: 180px;
+        width: 100%;
+        h1 {
+            font-size: 1.5rem;
+        }
+        .footer-redes {
+            ul {
+                width: 60%;
+            }
+        }
+        .text {
+            .frase {
+                font-size: .8rem;
+            }
+            .autor {
+                margin: 0;
+                font-size: .7rem;
+            }
+        }
+    }
+}
