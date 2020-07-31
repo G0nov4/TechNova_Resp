@@ -62,6 +62,9 @@ body {
             img {
                 width: 100%;
                 transform: scale(1.2);
+                @include celular() {
+                    transform: scale(1);
+                }
             }
         }
         .page-not-found {
