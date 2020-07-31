@@ -140,7 +140,6 @@ body {
     justify-content: space-around;
     height: 60%;
     width: 100%;
-    border: 1px solid #fcd15f;
     border-bottom: 0;
   }
   .header .barra .barra-navegacion .enlaces .enlace ul {
@@ -157,7 +156,6 @@ body {
     align-items: flex-start;
     height: 40%;
     width: 100%;
-    border: 1px solid yellow;
     border-top: 0;
   }
   .header .barra .barra-navegacion .enlaces .redes ul {
@@ -373,7 +371,7 @@ body {
   color: white;
   font-family: "Inconsolata", monospace;
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 1.9rem;
 }
 .cuerpo .about .about-description .description a {
   margin: 30px;
@@ -707,13 +705,12 @@ body {
 .cuerpo .other-post .card h3 {
   font-family: "Fjalla One", sans-serif;
   text-align: center;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 .cuerpo .other-post .card p {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  padding: 0px 20px;
-  height: 150px;
+  padding: 10px 15px 15px 15px;
 }
 .cuerpo .other-post .card button {
   margin: 10px;
@@ -771,6 +768,7 @@ body {
     font-size: 0.9rem;
   }
   .cuerpo .other-post .card p {
+    text-align: center;
     font-size: 0.6rem;
   }
   .cuerpo .other-post .card button {

@@ -114,7 +114,6 @@ body {
                         justify-content: space-around;
                         height: 60%;
                         width: 100%;
-                        border: 1px solid $color_Yellow;
                         border-bottom: 0;
                         ul {
                             text-align: center;
@@ -133,7 +132,6 @@ body {
                         align-items: flex-start;
                         height: 40%;
                         width: 100%;
-                        border: 1px solid yellow;
                         border-top: 0;
                         ul {
                             width: 60%;
@@ -357,7 +355,7 @@ body {
                     color: $color_White;
                     font-family: $font_Console;
                     font-size: 1.5rem;
-                    line-height: 1.5rem;
+                    line-height: 1.9rem;
                 }
                 a {
                     margin: 30px;
@@ -384,7 +382,7 @@ body {
                     p {
                         padding: 20px;
                         font-size: 1.3rem;
-                        line-height: 2rem;
+                        line-height: 1.5rem;
                     }
                     a {
                         font-size: 1.5rem;
@@ -681,13 +679,12 @@ body {
             h3 {
                 font-family: $font_title-card;
                 text-align: center;
-                padding: 15px;
+                padding: 15px 15px 0 15px;
             }
             p {
                 font-family: 'Poppins', sans-serif;
                 text-align: center;
-                padding: 0px 20px;
-                height: 150px;
+                padding: 10px 15px 15px 15px;
             }
             button {
                 margin: 10px;
@@ -731,6 +728,7 @@ body {
                     font-size: .9rem;
                 }
                 p {
+                    text-align: center;
                     font-size: .6rem;
                 }
                 button {
