@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  Colores utilizados  */
 /*  Fuentes utilizadas  */
 /*  Puntos de quiebres  */
@@ -17,11 +18,19 @@ body {
   background-color: #0b1726;
 }
 
+/*  
+    Este contiene la parte de la primera vista
+    donde estaran los enlaces y los logotipos 
+    Y para el diseño responsivo un menu hamburguesa
+*/
 .header {
   height: 101vh;
 }
 .header .barra {
   background-color: rgba(45, 64, 89, 0.5);
+  /*
+      Inicio del menu hamburguesa almacenando Inicio-Post-About junto a enlaces a redes.
+  */
 }
 .header .barra .barra-navegacion {
   display: flex;
@@ -392,7 +401,7 @@ body {
   .cuerpo .about .about-description .description p {
     padding: 20px;
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   .cuerpo .about .about-description .description a {
     font-size: 1.5rem;
@@ -555,7 +564,7 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 8px;
   text-align: center;
-  line-height: 16px;
+  line-height: 24px;
   height: 70%;
   margin-bottom: -13px;
 }
@@ -637,6 +646,9 @@ body {
   .cuerpo .ultimate-post .card-G h3 {
     padding: 10px;
     font-size: 0.9rem;
+  }
+  .cuerpo .ultimate-post .card-G p {
+    padding: 10px;
   }
   .cuerpo .ultimate-post .card-G button {
     display: none;
@@ -760,9 +772,7 @@ body {
   .cuerpo .other-post .card {
     overflow: hidden;
     margin: 0 0 10px 0;
-  }
-  .cuerpo .other-post .card img {
-    transform: scale(1.3);
+    width: 100%;
   }
   .cuerpo .other-post .card h3 {
     font-size: 0.9rem;

@@ -54,6 +54,9 @@ body header .banner button {
 body header .banner button:hover {
   box-shadow: 1px 0 2px #000;
 }
+body header .banner button:active {
+  box-shadow: 0 0 0 #000;
+}
 body section {
   display: flex;
   align-items: center;

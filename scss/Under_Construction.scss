@@ -52,6 +52,9 @@ body {
             button:hover {
                 box-shadow: 1px 0 2px #000;
             }
+            button:active {
+                box-shadow: 0 0 0 #000;
+            }
         }
     }
     section {

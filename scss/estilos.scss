@@ -16,6 +16,14 @@ body {
     background-color: $color_DarkBlue;
 }
 
+// Inicio de Header
+
+/*  
+    Este contiene la parte de la primera vista
+    donde estaran los enlaces y los logotipos 
+    Y para el diseño responsivo un menu hamburguesa
+*/
+
 .header {
     height: 101vh;
     .barra {
@@ -82,6 +90,9 @@ body {
                 }
             }
         }
+        /*
+            Inicio del menu hamburguesa almacenando Inicio-Post-About junto a enlaces a redes.
+        */
         @include tablet() {
             .barra-navegacion {
                 justify-content: space-between;
@@ -164,6 +175,7 @@ body {
             }
         }
     }
+    //Iniciamos con el banner
     .banner {
         position: absolute;
         top: 0;
@@ -275,6 +287,9 @@ body {
             }
         }
     }
+    //Fin de banner
+    // Inicio del contenedor-
+    //Este contendor contiene la parte de bienvenid 
     .container {
         align-content: center;
         text-align: center;
@@ -317,6 +332,7 @@ body {
             }
         }
     }
+    // Fin del contenedor
 }
 
 .cuerpo {
@@ -528,7 +544,7 @@ body {
                         font-family: 'Poppins', sans-serif;
                         padding: 8px;
                         text-align: center;
-                        line-height: 16px;
+                        line-height: 24px;
                         height: 70%;
                         margin-bottom: -13px;
                     }
@@ -610,6 +626,9 @@ body {
                 h3 {
                     padding: 10px;
                     font-size: .9rem;
+                }
+                p {
+                    padding: 10px;
                 }
                 button {
                     display: none;
@@ -721,9 +740,7 @@ body {
             .card {
                 overflow: hidden;
                 margin: 0 0 10px 0;
-                img {
-                    transform: scale(1.3);
-                }
+                width: 100%;
                 h3 {
                     font-size: .9rem;
                 }
