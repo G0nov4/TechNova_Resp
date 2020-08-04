@@ -180,6 +180,7 @@ body {
 }
 .header .banner {
   margin-bottom: -200px;
+  overflow: hidden;
 }
 .header .banner img {
   position: relative;
