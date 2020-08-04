@@ -113,7 +113,6 @@ body {
                         justify-content: space-around;
                         height: 60%;
                         width: 100%;
-                        border: 1px solid $color_Yellow;
                         border-bottom: 0;
                         ul {
                             text-align: center;
@@ -132,7 +131,6 @@ body {
                         align-items: flex-start;
                         height: 40%;
                         width: 100%;
-                        border: 1px solid yellow;
                         border-top: 0;
                         ul {
                             width: 60%;
@@ -195,7 +193,7 @@ body {
         @include celular() {
             img {
                 width: 150%;
-                animation: animacion-banner s infinite alternate;
+                animation: animacion-banner 10s infinite alternate;
             }
             @keyframes animacion-banner {
                 to {
@@ -221,6 +219,7 @@ body {
                 text-align: center;
                 font-size: 3.5rem;
                 color: $color_White;
+                margin-bottom: 20px;
             }
         }
         .post-description {
@@ -228,6 +227,23 @@ body {
             justify-content: center;
             .description {
                 width: 100%;
+                .video-responsive {
+                    display: flex;
+                    justify-content: center;
+                    height: 0;
+                    overflow: hidden;
+                    padding-bottom: 56.25%;
+                    padding-top: 30px;
+                    position: relative;
+                    margin-bottom: 10px;
+                    iframe,
+                    object,
+                    embed {
+                        height: 90%;
+                        position: absolute;
+                        width: 90%;
+                    }
+                }
                 p {
                     padding: 30px;
                     color: $color_White;

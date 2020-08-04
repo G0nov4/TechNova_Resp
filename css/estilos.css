@@ -696,12 +696,14 @@ body {
   justify-content: space-between;
 }
 .cuerpo .other-post a {
+  height: 100%;
   text-decoration: none;
   color: black;
-}
-.cuerpo .other-post .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.cuerpo .other-post .card {
   background-color: white;
   width: 32.5%;
   margin-bottom: 15px;
@@ -779,7 +781,7 @@ body {
   }
   .cuerpo .other-post .card p {
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .cuerpo .other-post .card button {
     display: none;

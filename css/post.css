@@ -137,7 +137,6 @@ body {
     justify-content: space-around;
     height: 60%;
     width: 100%;
-    border: 1px solid #fcd15f;
     border-bottom: 0;
   }
   .header .barra .barra-navegacion .enlaces .enlace ul {
@@ -154,7 +153,6 @@ body {
     align-items: flex-start;
     height: 40%;
     width: 100%;
-    border: 1px solid yellow;
     border-top: 0;
   }
   .header .barra .barra-navegacion .enlaces .redes ul {
@@ -209,7 +207,7 @@ body {
 @media (max-width: 480px) {
   .header .banner img {
     width: 150%;
-    animation: animacion-banner s infinite alternate;
+    animation: animacion-banner 10s infinite alternate;
   }
   @keyframes animacion-banner {
     to {
@@ -232,6 +230,7 @@ body {
   text-align: center;
   font-size: 3.5rem;
   color: white;
+  margin-bottom: 20px;
 }
 .cuerpo .post .post-description {
   display: flex;
@@ -239,6 +238,23 @@ body {
 }
 .cuerpo .post .post-description .description {
   width: 100%;
+}
+.cuerpo .post .post-description .description .video-responsive {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.cuerpo .post .post-description .description .video-responsive iframe,
+.cuerpo .post .post-description .description .video-responsive object,
+.cuerpo .post .post-description .description .video-responsive embed {
+  height: 90%;
+  position: absolute;
+  width: 90%;
 }
 .cuerpo .post .post-description .description p {
   padding: 30px;

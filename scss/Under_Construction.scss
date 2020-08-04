@@ -37,17 +37,18 @@ body {
         box-shadow: 5px 0 5px #000;
         .banner {
             button {
+                cursor: pointer;
+                text-decoration: none;
                 display: flex;
                 justify-content: space-around;
                 width: 200px;
                 border: none;
                 background-color: var(--color_fondo_barra);
                 color: #fff;
-                padding: 10px;
+                padding: 12px;
                 font-weight: bold;
                 box-shadow: 3px 0 5px #000;
                 border-radius: 0 50px 50px 0;
-                cursor: pointer;
             }
             button:hover {
                 box-shadow: 1px 0 2px #000;
@@ -62,6 +63,7 @@ body {
         align-items: center;
         justify-content: center;
         .logo {
+            z-index: -1;
             img {
                 width: 100%;
                 transform: scale(1.2);
