@@ -165,7 +165,6 @@ body {
     }
     .banner {
         margin-bottom: -200px;
-        overflow: hidden;
         img {
             position: relative;
             top: -89px;
@@ -179,6 +178,7 @@ body {
             z-index: -1;
         }
         @include tablet() {
+            overflow: hidden;
             .img-banner {
                 .banner-1 {
                     width: 100%;

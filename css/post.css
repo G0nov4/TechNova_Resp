@@ -180,7 +180,6 @@ body {
 }
 .header .banner {
   margin-bottom: -200px;
-  overflow: hidden;
 }
 .header .banner img {
   position: relative;
@@ -195,6 +194,9 @@ body {
   z-index: -1;
 }
 @media (max-width: 768px) {
+  .header .banner {
+    overflow: hidden;
+  }
   .header .banner .img-banner .banner-1 {
     width: 100%;
     background-repeat: no-repeat;
