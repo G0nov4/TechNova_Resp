@@ -167,7 +167,7 @@ body {
     left: 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .header .barra .barra-navegacion {
     height: 60px;
   }
@@ -207,7 +207,7 @@ body {
     bottom: 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .header .banner img {
     width: 150%;
     animation: animacion-banner 10s infinite alternate;
@@ -315,7 +315,7 @@ body {
     margin: 10px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .cuerpo .post .title h1 {
     font-size: 1.7rem;
   }
@@ -423,7 +423,7 @@ body {
     margin-left: 480px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .footer {
     height: 180px;
     width: 100%;

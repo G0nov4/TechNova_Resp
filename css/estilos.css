@@ -179,7 +179,7 @@ body {
     left: 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .header .barra .barra-navegacion {
     height: 60px;
   }
@@ -277,7 +277,7 @@ body {
     bottom: 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .header .banner {
     height: 71vh;
   }
@@ -332,7 +332,7 @@ body {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .header .container .texto-banner {
     margin-top: 25%;
   }
@@ -424,7 +424,7 @@ body {
     margin: 10px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .cuerpo .about .title {
     margin: -30px 0;
   }
@@ -635,7 +635,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .cuerpo .ultimate-post {
     flex-direction: column;
   }
@@ -770,7 +770,7 @@ body {
     font-size: 0.7rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .cuerpo .other-post .card {
     overflow: hidden;
     margin: 0 0 10px 0;
@@ -875,7 +875,7 @@ body {
     margin-left: 480px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .footer {
     height: 180px;
     width: 100%;
